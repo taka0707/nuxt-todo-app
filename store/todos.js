@@ -12,14 +12,20 @@ export const actions = {
   init: firestoreAction(({ bindFirestoreRef }) => {
     bindFirestoreRef('todos', todosRef)
   }),
-  add: firestoreAction((context, name) => {
-    if(name.trim()) {
-      todosRef.add({
-        name: name,
-        done: false,
-        created: firebase.firestore.FieldValue.serverTimestamp()
-      })
+  add: firestoreAction((context, todoObject) => {
+    try {
+      if(todoObject.title.trim()) {
+        todosRef.add({
+          title: todoObject.title,
+          text: todoObject.text,
+          done: false,
+          created: firebase.firestore.FieldValue.serverTimestamp()
+        })
+      }
+    } catch(e) {
+      console.log(`Error: ${JSON.stringify(e)}`)
     }
+    
   }),
   remove: firestoreAction((context, id) => {
     todosRef.doc(id).delete()
