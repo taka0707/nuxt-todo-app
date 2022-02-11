@@ -15,7 +15,7 @@
 
 ## DEMO
 
-- https://github.com/taka0707/nuxt-todo-app/issues/4#issue-1131547822
+https://user-images.githubusercontent.com/66991723/153560873-6b2777e9-d135-442a-a581-598241c45e8f.gif
 
 ## 環境構築
 
