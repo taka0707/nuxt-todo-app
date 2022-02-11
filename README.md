@@ -15,7 +15,7 @@
 
 ## DEMO
 
-https://user-images.githubusercontent.com/66991723/153561474-bafc3495-ace8-45e4-8353-6f0f2290032e.gif
+![nuxt-app demo#1](https://user-images.githubusercontent.com/66991723/153562552-37aae517-c781-46ba-a39d-13477412184e.gif)
 
 ## 環境構築
 
