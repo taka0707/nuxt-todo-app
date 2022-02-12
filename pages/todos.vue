@@ -26,6 +26,9 @@
           <b-button type="submit" variant="primary">Add</b-button>
           <b-button type="button"  v-on:click="clear">Reset</b-button>
         </b-form>
+
+        <p class="mt-4"><router-link to="/">▶︎ 戻る</router-link></p>
+
       </b-col>
       <b-col>
         <!-- 登録済todo表示 -->
